@@ -6,6 +6,7 @@
   <title>Portofolio Eka Novi Kartika</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="portfolio.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -17,11 +18,12 @@
     <header class="portfolio-header">
       <h1>Portofolio Eka Novi Kartika</h1>
       <p>Mahasiswi Sistem Informasi & Admin di Ekka Boutique</p>
+      <a href="cv-eka-novi.pdf" class="download-btn" download>📄 Unduh CV</a>
     </header>
 
     <section class="portfolio-grid">
       <div class="portfolio-item">
-        <img src="project-admin.jpg" alt="Admin Ekka Boutique" />
+        <img src="images/project-admin.jpg" alt="Admin Ekka Boutique" />
         <div class="portfolio-info">
           <h3>Admin Ekka Boutique</h3>
           <p>Mengelola data, mendukung operasional harian, dan memastikan kelancaran komunikasi serta dokumentasi dalam organisasi.</p>
@@ -29,7 +31,7 @@
       </div>
 
       <div class="portfolio-item">
-        <img src="project-cv.jpg" alt="Website CV" />
+        <img src="images/project-cv.jpg" alt="Website CV" />
         <div class="portfolio-info">
           <h3>Website CV Pribadi</h3>
           <p>Website HTML & CSS yang menampilkan profil profesional, pengalaman, pendidikan, dan keterampilan secara interaktif.</p>
@@ -37,13 +39,27 @@
       </div>
 
       <div class="portfolio-item">
-        <img src="project-uiux.jpg" alt="UI/UX Design" />
+        <img src="images/project-uiux.jpg" alt="UI/UX Design" />
         <div class="portfolio-info">
           <h3>UI/UX Design</h3>
           <p>Desain antarmuka sederhana untuk aplikasi toko online menggunakan prinsip user-friendly dan estetika modern.</p>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <p>© 2025 Eka Novi Kartika. Dibuat dengan ❤️ dan HTML/CSS.</p>
+    </footer>
   </div>
+
+  <script>
+    ScrollReveal().reveal('.portfolio-item', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 800,
+      interval: 200,
+      reset: false
+    });
+  </script>
 </body>
 </html>
